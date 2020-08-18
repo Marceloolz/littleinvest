@@ -1,0 +1,45 @@
+.Site_Header{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    padding: 24px 0px;
+    .Site_Header_Container{
+        width: 90%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .Header_Container_Logotipo{
+
+        }
+        .Header_Container_Menu{
+            ul{
+                margin: inherit;
+                padding: inherit;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                a{
+                    text-decoration: none;
+                }
+                li{
+                    margin: 0px 16px;
+                    list-style-type: none;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $Preto;
+
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                    &:hover{
+                        @extend %Hover;
+                        color: $Roxo;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.Formgroup{
+    .Formgroup_Button{
+        padding: 10px 24px;
+        border-radius: 4px;
+        cursor: pointer;
+        @extend %Hover;
+        border: 2px solid #0000;
+        width: fit-content;
+        i{
+            margin-right: 8px;
+            font-size: 20px;
+        }
+        &:hover{
+            animation: pulseButton 1s infinite;
+        }
+        &.__is-Roxo{
+            color: $Branco!important;
+            background-color: $Roxo;
+            &:hover{
+                color: $Roxo!important;
+                background-color: $Branco;
+                border: 2px solid $Roxo;
+            }
+        }
+    }
+}
+
+@keyframes pulseButton{
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.07);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}

@@ -1,0 +1,28 @@
+.Site_Home{
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/background-home.svg);
+    background-size: auto;
+    min-height: calc(80vh - 100px);
+    background-repeat: no-repeat;
+    background-position: 85% center;
+    .Site_Home_Container{
+        width: 90%;
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        .Home_Container_Content{
+            max-width: 340px;
+            width: 100%;
+            .Container_Content_Titulo{
+                font-size: 40px;
+                line-height: 48px;
+                color: $Preto;
+                font-weight: 600;
+            }
+            .Container_Content_Button{
+                margin-top: 32px;
+            }
+        }
+    }
+}
