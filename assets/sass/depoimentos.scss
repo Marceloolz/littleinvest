@@ -1,0 +1,58 @@
+.Site_Depoimentos{
+    position: relative;
+    &:after{
+        display: block;
+        content: ' ';
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #4455ddad;
+        z-index: 9;
+    }
+    .Site_Depoimentos_Item{
+        min-height: 100vh;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        &.__is-depoimento1{
+            background-image: url('../img/depoimento1.jpg');
+        }
+        .Depoimentos_Item_Container{
+            width: 90%;
+            max-width: 1200px;
+            z-index: 99;
+            display: flex;
+            align-items: flex-end;
+            .Item_Container_Texto{
+                max-width: 480px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 80px;
+                .Container_Texto_Aspas{
+                    margin-bottom: 24px;
+                    img{
+                        width: 100px;
+                    }
+                }
+                .Container_Texto_Conteudo{
+                    color: $Branco;
+                    font-size: 40px;
+                    line-height: 48px;
+                    font-style: italic;
+                    font-weight: 600;
+                }
+                .Container_Texto_Autor{
+                    color: #afafaf;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    margin-top: 16px;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

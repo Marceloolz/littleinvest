@@ -1,0 +1,48 @@
+.Site_Contato{
+    display: flex;
+    flex-direction: row;
+    .Site_Contato_Conteudo{
+        width: 50%;
+        min-height: 250px;
+        background-color: #F2F2F2;
+        display: flex;
+        justify-content: center;
+        .Contato_Conteudo_Container{
+            width: 90%;
+            max-width: 320px;
+            padding: 48px 0;
+            .Conteudo_Container_Titulo{
+                color: $Preto;
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 700;
+            }
+            .Conteudo_Container_Formulario{
+                margin-top: 24px;
+                .Container_Formulario_Item{
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+    .Site_Contato_Side{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .Contato_Side_Container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            span{
+                margin-top: 24px;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 700;
+                color: $Preto;
+            }
+        }
+    }
+}
