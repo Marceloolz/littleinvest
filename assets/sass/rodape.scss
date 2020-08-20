@@ -7,15 +7,16 @@
         .Rodape_Principal_Container{
             width: 90%;
             max-width: 1200px;
-            display: flex;
-            justify-content: space-between;        
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 16px;    
             .Principal_Container_Item{
                 width: fit-content;
                 .Container_Item_Titulo{
                     color: #E8E8E8;
                     font-size: 20px;
                     line-height: 28px;
-                    font-weight: 500;
+                    font-weight: 700;
                     margin-bottom: 16px;
                     text-transform: uppercase;
                 }
@@ -25,7 +26,7 @@
                     .Item_RedesSociais_Icone{
                         margin: 12px;
                         a{
-                            font-size: 48px;
+                            font-size: 56px;
                             color: $Roxo;
                             &:hover{
                                 color: $Branco
@@ -42,7 +43,7 @@
                 .Container_Item_MapaDoSite{
                     display: grid;
                     grid-template-columns: 1fr 1fr;
-                    grid-gap: 16px;
+                    grid-gap: 12px;
                     .Item_MapaDoSite_Item{
                         a{
                             text-decoration: none;
@@ -58,6 +59,28 @@
                         }
                     }
                 }
+                .Container_Item_Sobre{
+                    color: #808080;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .Site_Rodape_Secundario{
+        background-color: $Roxo;
+        display: flex;
+        justify-content: center;
+        padding: 16px 0px;
+        .Rodape_Secundario_Container{
+            width: 90%;
+            max-width: 1200px;
+            .Secundario_Container_Item{
+                color: $Branco;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 600;
             }
         }
     }
