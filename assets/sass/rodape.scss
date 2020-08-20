@@ -1,0 +1,17 @@
+.Site_Rodape{
+    .Site_Rodape_Principal{
+        background-color: $Preto;
+        display: flex;
+        justify-items: center;
+        padding: 32px 0px;
+        .Rodape_Principal_Container{
+            width: 90%;
+            max-width: 1200px;
+            .Principal_Container_Item{
+                .Container_Item_Titulo{
+                    
+                }
+            }
+        }
+    }
+}
