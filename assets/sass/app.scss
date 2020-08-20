@@ -16,3 +16,9 @@ body{
 @import 'depoimentos.scss';
 @import 'contato.scss';
 @import 'rodape.scss';
+
+a{
+    &:hover{
+        @extend %Hover;
+    }
+}
