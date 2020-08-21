@@ -28,7 +28,12 @@
                     justify-content: center;
                     flex-direction: column;
                     .Conteudo_Item_Imagem{
-
+                        img{
+                            cursor: pointer;
+                            &:hover{
+                                animation: pulseImagem 1s 3;
+                            }
+                        }
                     }
                     .Conteudo_Item_Titulo{
                         color: $Preto;

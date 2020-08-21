@@ -38,6 +38,12 @@
             justify-content: center;
             align-items: center;
             width: fit-content;
+            img{
+                &:hover{
+                    cursor: pointer;
+                    animation: pulseImagem 1s 2;
+                }
+            }
             span{
                 margin-top: 24px;
                 font-size: 16px;
