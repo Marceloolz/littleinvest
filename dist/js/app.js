@@ -10,16 +10,42 @@ $(document).ready(function(){
         $('.Container_Menu_Item').removeClass('__ActiveMobile');
     });
 
-
-    //Abrir Modal
-    $('.AtivaOrcamento').click(function(){
-        $('.ModalOrcamento').addClass('__is-active');
+    /*Manupular os steps*/
+    $('.__buttonform1').click(function(){
+        $('.__is-form1').removeClass('__is-active');
+        $('.__is-form2').addClass('__is-active');
+        $('.__is-step2').addClass('__is-active');
     });
 
-    //Fechar Modal
-    $('.ModalOrcamento_Close').click(function(){
-        $('.ModalOrcamento').removeClass('__is-active');
+    $('.__buttonform2').click(function(){
+        $('.__is-form2').removeClass('__is-active');
+        $('.Conteudo_Container_MensagemFinal').addClass('__is-active');
+        $('.__is-step3').addClass('__is-active');
     });
+
+
+
+    //////// CONFIGURA SCROLL DOS MENUS ////////
+    $( ".scrollLink" ).click(function() {
+        animacaoScroll($(this));
+    });
+
+
+    function animacaoScroll(element){
+        if($(window).width() > 768){
+            $("html, body").animate({ scrollTop: $($(element).attr("data-scrollto")).offset().top - 94}, 500);
+        }
+        if($(window).width() <= 768 && $(window).width() > 600){
+            $("html, body").animate({ scrollTop: $($(element).attr("data-scrollto")).offset().top - 92 }, 500);
+        }
+        if($(window).width() <= 600 && $(window).width() > 480){
+            $("html, body").animate({ scrollTop: $($(element).attr("data-scrollto")).offset().top - 92 }, 500);
+        }
+        if($(window).width() <= 480){
+            $("html, body").animate({ scrollTop: $($(element).attr("data-scrollto")).offset().top - 92 }, 500);
+        }
+    }
+
    
 
     //Slide de Produtos da Home

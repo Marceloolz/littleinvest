@@ -44,6 +44,21 @@
             border: 2px solid $Roxo;
         }
     }
+
+    .Formgroup_Select{
+        width: 100%;
+        display: block;
+        background-color: #DDDDDD;
+        border: 2px solid #3954e200;
+        padding: 16px;
+        border-radius: 4px;
+        margin-top: 8px;
+        @extend %Hover;
+        outline: none;
+        &:focus{
+            border: 2px solid $Roxo;
+        }
+    }
 }
 
 @keyframes pulseButton{

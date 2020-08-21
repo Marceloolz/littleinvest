@@ -4,7 +4,10 @@
     justify-content: center;
     padding: 24px 0px;
     z-index: 9999999;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     .Site_Header_Container{
         width: 90%;
         max-width: 1200px;
@@ -43,6 +46,7 @@
                     a{
                         text-decoration: none;
                         color: inherit;
+                        cursor: pointer;
                     }
                     &:hover{
                         @extend %Hover;
