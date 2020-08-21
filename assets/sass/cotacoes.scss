@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: center;
     padding: 64px 0px;
+    z-index: 99;
+    position: relative;
     .Site_Cotacoes_Container{
         width: 90%;
         max-width: 1200px;

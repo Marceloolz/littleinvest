@@ -26,3 +26,37 @@
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .Site_Home{
+        background-position: bottom;
+        min-height: calc(85vh - 100px);
+        &:after{
+            background-color: #ffffffd1;
+            content: ' ';
+            display: block;
+            width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9;
+        }
+        .Site_Home_Container{
+            justify-content: center;
+            align-items: flex-start;
+            .Home_Container_Content{
+                margin-top: 32px;
+                max-width: 100%;
+                z-index: 99;
+                .Container_Content_Titulo{
+                    text-align: center;
+                }
+                .Container_Content_Button{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

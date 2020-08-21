@@ -1,4 +1,6 @@
 .Site_Rodape{
+    z-index: 99;
+    position: relative;
     .Site_Rodape_Principal{
         background-color: $Preto;
         display: flex;
@@ -81,6 +83,41 @@
                 font-size: 16px;
                 line-height: 24px;
                 font-weight: 600;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px){
+    .Site_Rodape{
+        .Site_Rodape_Principal{
+            .Rodape_Principal_Container{
+                grid-template-columns: 1fr;
+                .Principal_Container_Item{
+                    width: 100%;
+                    .Container_Item_Titulo{
+                        text-align: center;
+                    }
+                    .Container_Item_MapaDoSite{
+                        grid-template-columns: 1fr 1fr 1fr;
+                        .Item_MapaDoSite_Item{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                    .Container_Item_RedesSociais{
+                        justify-content: center;
+                    }
+                    .Container_Item_Sobre{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .Site_Rodape_Secundario{
+            .Rodape_Secundario_Container{
+                text-align: center;
             }
         }
     }

@@ -36,6 +36,8 @@ $(document).ready(function(){
         $('.ModalLigacao, .ModalCadastro').removeClass('__IsActive');
     });
 
+    
+
 
     //Abre e fecha o modal de cadastro
     $('.OpenCadastro').click(function(){

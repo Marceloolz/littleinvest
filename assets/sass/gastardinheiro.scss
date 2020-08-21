@@ -2,8 +2,10 @@
     display: flex;
     justify-content: center;
     padding: 64px 0px;
+    position: relative;
+    z-index: 99;
     .Site_GastarDinheiro_Container{
-        width: 100%;
+        width: 90%;
         max-width: 1200px;
         .GastarDinheiro_Container_Content{
             display: flex;
@@ -46,6 +48,18 @@
             }
             .Container_Content_Button{
                 margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .Site_GastarDinheiro{
+        .Site_GastarDinheiro_Container{
+            .GastarDinheiro_Container_Content{
+                .Container_Content_Conteudo{
+                    grid-template-columns: 1fr;
+                }
             }
         }
     }

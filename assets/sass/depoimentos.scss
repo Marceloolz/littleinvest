@@ -1,5 +1,6 @@
 .Site_Depoimentos{
     position: relative;
+    z-index: 99;
     &:after{
         display: block;
         content: ' ';
@@ -51,6 +52,31 @@
                     font-weight: 600;
                     margin-top: 16px;
                     font-style: italic;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){   
+    .Site_Depoimentos{
+        .Site_Depoimentos_Item{
+            &.__is-depoimento1{
+                background-position: center center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .Site_Depoimentos{
+        .Site_Depoimentos_Item{
+            .Depoimentos_Item_Container{
+                .Item_Container_Texto{
+                    .Container_Texto_Conteudo{
+                        font-size: 32px;
+                        line-height: 40px;
+                    }
                 }
             }
         }
