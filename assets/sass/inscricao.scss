@@ -58,7 +58,7 @@
                             content: ' ';
                             position: absolute;
                             top: 10px;
-                            left: 118px;
+                            left: 57%;
                             z-index:9;
                         }
                     }
@@ -133,3 +133,14 @@
     }
 }
 
+@media screen and (max-width: 780px){
+    .Site_Inscricao{
+        .Site_Inscricao_Conteudo{
+            .Inscricao_Conteudo_Container{
+                .Conteudo_Container_Formulario{
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}
