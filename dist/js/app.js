@@ -4,12 +4,10 @@ $(document).ready(function(){
     /*Manupular o menu*/
     $('.Container_Menu_IconeMobile').click(function(){
         $('.Container_Menu_Item').addClass('__ActiveMobile');
-        $('.Container_Menu_IconeMobile').hide();
     });
 
     $('.Menu_Item_Close').click(function(){
         $('.Container_Menu_Item').removeClass('__ActiveMobile');
-        $('.Container_Menu_IconeMobile').show();
     });
 
 

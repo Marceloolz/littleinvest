@@ -16,6 +16,14 @@
 
         }
         .Header_Container_Menu{
+            .Container_Menu_IconeMobile{
+                display: none;
+            }
+            .Container_Menu_Item{
+                .Menu_Item_Close{
+                    display: none;
+                }
+            }
             ul{
                 margin: inherit;
                 padding: inherit;
@@ -60,6 +68,7 @@
                     font-size: 32px;
                     cursor: pointer;
                     color: $Roxo;
+                    display: block;
                 }
                 .Container_Menu_Item{
                     position: relative;
